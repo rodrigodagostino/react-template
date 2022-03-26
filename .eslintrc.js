@@ -1,31 +1,20 @@
 module.exports = {
+  root: true,
   env: {
-    browser: false,
     es6: true,
     node: true,
-    jquery: true,
   },
+  plugins: [ 'react', 'jsx-a11y' ],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
   ],
-  globals: {
-    window: true,
-    document: true,
-    fetch: false,
-  },
   parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
+    ecmaVersion: 2020,
+    sourceType: 'module',
     ecmaFeatures: {
-      jsx: true, // Allows for the parsing of JSX
-    },
-  },
-  plugins: [ 'react', 'jsx-a11y' ],
-  settings: {
-    react: {
-      version: 'detect',
+      jsx: true,
     },
   },
   rules: {
