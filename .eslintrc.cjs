@@ -1,9 +1,6 @@
 module.exports = {
   root: true,
-  env: {
-    browser: true,
-    node: true,
-  },
+  env: { browser: true, es2020: true },
   plugins: ['react', 'jsx-a11y', 'react-refresh'],
   extends: [
     'eslint:recommended',
