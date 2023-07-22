@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite + SWC
 
 This template should help get you started developing with React in Vite.
 

@@ -3,29 +3,23 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true,
   },
-  plugins: ['react', 'jsx-a11y', 'prettier'],
+  plugins: ['react', 'jsx-a11y', 'react-refresh'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: 'detect' } },
   rules: {
-    'prettier/prettier': 'error',
-    'react/react-in-jsx-scope': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
   },
 }
