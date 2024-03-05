@@ -12,7 +12,7 @@ module.exports = {
 	plugins: ['react-refresh'],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-	settings: { react: { version: 'detect' } },
+	settings: { react: { version: '18.2' } },
 	rules: {
 		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 	},
